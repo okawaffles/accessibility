@@ -2,6 +2,7 @@
     --unclicked: #ffffff66;
     --hovering: #90ee9033;
     --clicked: lightgreen;
+    --supervis: white;
 }
 /* DM list */
 .interactive_f5eb4b {
@@ -9,6 +10,16 @@
 }
 .interactiveSelected_c91bad {
     border: 2px solid var(--clicked);
+}
+.channel_c91bad:hover {
+    background-color: var(--hovering);
+
+    .interactive_f5eb4b {
+        border: 1px solid var(--hovering) !important;
+    }
+    .interactiveSelected_c91bad {
+        border: 2px solid var(--hovering) !important;
+    }
 }
 /* Server channels list */
 .link_d8bfb3 {
@@ -48,4 +59,16 @@
 /* chat */
 .channelTextArea_a7d72e {
     border: 1px dashed var(--unclicked);
+}
+/* extra */
+.title_a7d72e {
+    border-bottom: 1px dashed var(--unclicked);
+}
+/* tooltips */
+#guild-context {
+    border: 2px dashed var(--clicked)
+}
+.layer_cd0de5 {
+    border: 2px dashed var(--supervis);
+    border-radius: .5em;
 }
