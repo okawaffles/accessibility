@@ -1,0 +1,51 @@
+* {
+    --unclicked: #ffffff66;
+    --hovering: #90ee9033;
+    --clicked: lightgreen;
+}
+/* DM list */
+.interactive_f5eb4b {
+    border: 1px dashed var(--unclicked);
+}
+.interactiveSelected_c91bad {
+    border: 2px solid var(--clicked);
+}
+/* Server channels list */
+.link_d8bfb3 {
+    border: 1px dashed var(--unclicked);
+}
+.link_d8bfb3:hover {
+    border: 1px solid var(--hovering);
+    background-color: var(--hovering) !important;
+}
+.modeSelected_d8bfb3 .link_d8bfb3 {
+    border: 2px solid var(--clicked);
+}
+/* Server members list */
+.memberInner_a31c43 {
+    border: 1px dashed var(--unclicked);
+}
+.memberInner_a31c43:hover {
+    border: 1px solid var(--hovering) !important;
+    background-color: var(--hovering) !important;
+}
+.selected_e9f61e .memberInner_a31c43 {
+    border: 2px solid var(--clicked) !important;
+}
+/* user profiles */
+.userPopoutOuter_c69a7b {
+    border: 4px dashed var(--unclicked);
+}
+.header_c6e596 .bannerSVGWrapper_b32cc2 {
+    border-bottom: 2px dashed var(--unclicked) !important;
+}
+.activity_cd74cc {
+    border: 1px dashed var(--unclicked);
+}
+.userPopoutInner_c69a7b .inner_d0696b {
+    border: 1px dashed var(--unclicked);
+}
+/* chat */
+.channelTextArea_a7d72e {
+    border: 1px dashed var(--unclicked);
+}
