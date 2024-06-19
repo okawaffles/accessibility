@@ -3,6 +3,7 @@
     --hovering: #90ee9033;
     --clicked: lightgreen;
     --supervis: white;
+    --smallvis: #ffffff44;
 }
 /* DM list */
 .interactive_f5eb4b {
@@ -71,4 +72,65 @@
 .layer_cd0de5 {
     border: 2px dashed var(--supervis);
     border-radius: .5em;
+}
+/* active now */
+.itemCard_f02fcf {
+    border: 1px dashed var(--unclicked);
+    
+    .body_cd82a7 {
+        border: 1px dashed var(--unclicked);
+    }
+}
+.itemCard_f02fcf:hover {
+    background-color: var(--hovering) !important;
+    border: 2px solid var(--hovering);
+}
+/* friends */
+.peopleListItem_d51464 {
+    border: 1px dashed var(--unclicked);
+    border-radius: 1em;
+    padding: .5em
+}
+.peopleListItem_d51464:hover {
+    border: 2px solid var(--hovering);
+    border-radius: 1em;
+    padding: .5em;
+    background-color: var(--hovering) !important;
+}
+.userInfo_f3939d {
+    align-items: center;
+}
+.actionButton_e01b91 {
+    border: 1px dashed var(--smallvis);
+}
+/* friends top bar */
+.item_c2739c {
+    border: 1px dashed var(--unclicked);
+}
+.item_c2739c.selected_a0 {
+    background-color: var(--smallvis) !important;
+    border: 2px solid var(--clicked) !important;
+}
+.item_c2739c:hover {
+    border: 1px solid var(--hovering);
+    background-color: var(--unclicked) !important;
+}
+.item_c2739c:nth-child(5) {
+    background-color: var(--unclicked) !important;
+}
+/* add friend */
+.container_aef5fd {
+    border: 1px dashed var(--unclicked);
+}
+.container_aef5fd:hover {
+    border: 1px solid var(--supervis);
+    background-color: var(--hovering) !important;
+}
+.addFriendInputWrapper_de812f {
+    border: 1px dashed var(--unclicked);
+}
+/* user profile area */
+.container_b2ca13 {
+    border: 2px dashed var(--unclicked);
+    border-radius: 1em;
 }
