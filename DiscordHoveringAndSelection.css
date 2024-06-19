@@ -4,6 +4,9 @@
     --clicked: lightgreen;
     --supervis: white;
     --smallvis: #ffffff44;
+    --mention: #ffff00;
+    --mention-bg: #ffff0022;
+    --function-text: #6495ed;
 }
 /* DM list */
 .interactive_f5eb4b {
@@ -65,14 +68,6 @@
 .title_a7d72e {
     border-bottom: 1px dashed var(--unclicked);
 }
-/* tooltips */
-#guild-context {
-    border: 2px dashed var(--clicked)
-}
-.layer_cd0de5 {
-    border: 2px dashed var(--supervis);
-    border-radius: .5em;
-}
 /* active now */
 .itemCard_f02fcf {
     border: 1px dashed var(--unclicked);
@@ -133,4 +128,51 @@
 .container_b2ca13 {
     border: 2px dashed var(--unclicked);
     border-radius: 1em;
+}
+/* various embedded */
+.nonVisualMediaItem_df7417 {
+    border: 2px dashed var(--unclicked);
+    border-radius: .5em;
+}
+/* messages? */
+.mentioned_d5deea::before {
+    background-color: var(--mention);
+}
+.mentioned_d5deea {
+    background-color: var(--mention-bg);
+}
+/* search */
+.searchOption_b0286e {
+    border: 1px dashed var(--unclicked);
+}
+.searchOption_b0286e:hover {
+    border: 2px solid var(--supervis);
+    background-color: var(--hovering);
+}
+.option_b0286e:not(.searchOption_b0286e) {
+    border: 1px dashed var(--unclicked);
+
+    .nonText_b0286e {
+        color: var(--supervis) !important;
+    }
+}
+.option_b0286e:not(.searchOption_b0286e):hover {
+    border: 1px solid var(--supervis);
+    background-color: var(--mention-bg);
+}
+.header_b0286e {
+    color: var(--supervis) !important;
+}
+/* search filters are colored specifically to differentiate */
+.filter_b0286e {
+    color: var(--function-text) !important;
+    font-weight: bolder;
+}
+.answer_b0286e {
+    color: var(--function-text) !important;
+    font-style: italic;
+}
+/* message buttons (reply, etc) */
+.buttonsInner_d5deea {
+    border: 1px dashed var(--supervis);
 }
